@@ -68,6 +68,8 @@ class CategorieServiceController extends AbstractController
      * @Route("/service/categorie/update/{id}",name="updatecatservice")
      */
 
+
+
     function update($id,CategorieServiceRepository $repo,Request $request){
         $categorie=$repo->find($id) ;
         $form=$this->createForm(CategorieServiceType::class,$categorie);
