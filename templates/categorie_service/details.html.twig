@@ -1,0 +1,10 @@
+{% extends 'baseBack.html.twig' %}
+{% block title %}Gestion Categorie service{% endblock %}
+{% block contentHeader %} Détails Catégorie {% endblock %}
+{% block contentMain %}
+    {{ categorie.id }}
+    {{ categorie.libelle }}
+    {{ categorie.description }}
+    {{ dump(categorie.services) }}
+    {{ dump(categorie.fourniseurServices) }}
+{% endblock %}

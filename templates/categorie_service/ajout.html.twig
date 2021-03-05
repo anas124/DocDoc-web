@@ -1,0 +1,10 @@
+{% extends 'baseBack.html.twig' %}
+{% block title %}Gestion Categorie service{% endblock %}
+{% block contentHeader %} Ajouter Catégorie {% endblock %}
+{%  block contentMain  %}
+
+    {{ form_start(f) }}
+    <button type="submit" class="btn bg-gradient-info">ajouter</button>
+    {{ form_end(f) }}
+
+{% endblock %}
