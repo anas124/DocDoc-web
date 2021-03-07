@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56628ce6-147a-473e-8c8a-539f7e25ec6a" name="Default Changelist" comment="" />
+    <list default="true" id="56628ce6-147a-473e-8c8a-539f7e25ec6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategorieServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategorieServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/baseBack.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/baseBack.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/templates/baseBack.html.twig" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -154,7 +162,8 @@
       <workItem from="1614525323890" duration="131000" />
       <workItem from="1614552020012" duration="1087000" />
       <workItem from="1614766967074" duration="639000" />
-      <workItem from="1614866013062" duration="46381000" />
+      <workItem from="1614866013062" duration="46833000" />
+      <workItem from="1615115312034" duration="5207000" />
     </task>
     <servers />
   </component>
@@ -173,9 +182,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="436" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768/1366.0.1280.720@0.0.1366.768" timestamp="1614892101628" />
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614931080397">
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615120231636">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1614931080397" />
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1615120231636" />
   </component>
 </project>

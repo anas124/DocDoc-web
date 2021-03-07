@@ -23,7 +23,7 @@ class CategorieServiceController extends AbstractController
         ]);
     }
     /**
-     * @Route("/service/categorie/affiche",name="affichercatservice")
+     * @Route("categorie/service/affiche",name="affichercatservice")
      */
     public function affiche(){
         $repo=$this->getDoctrine()->getRepository(CategorieService::class)->findAll();
