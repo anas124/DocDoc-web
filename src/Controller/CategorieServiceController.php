@@ -73,7 +73,7 @@ class CategorieServiceController extends AbstractController
     function update($id,CategorieServiceRepository $repo,Request $request){
         $categorie=$repo->find($id) ;
         $form=$this->createForm(CategorieServiceType::class,$categorie);
-        $form->add("update",SubmitType::class);
+
         $form->handleRequest($request);
         if($form->isSubmitted()&&$form->isValid()){
             $em=$this->getDoctrine()->getManager();

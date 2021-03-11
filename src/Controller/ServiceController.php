@@ -8,6 +8,8 @@ use App\Repository\ServiceRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
+
 use Symfony\Component\HttpFoundation\Response;
 class ServiceController extends AbstractController
 {
@@ -17,7 +19,7 @@ class ServiceController extends AbstractController
     public function index(): Response
     {
         return $this->render('service/index.html.twig', [
-            'controller_name' => 'ServiceController',
+            'controller_name' => 'ServiceController'
         ]);
     }
     /**

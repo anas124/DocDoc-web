@@ -22,20 +22,24 @@ class CategorieService
 
     /**
      * @ORM\Column(type="string", length=60)
-      * @Assert\Regex(
-     *     pattern="/\d/",
-     *     match=false,
-     *     message="le champs libelle ne doit pas commancer par un chiffre ")
+     * @Assert\Length(
+     *      min = 2,
+     *      max = 50,
+     *      minMessage = "libelle must be at least {{ limit }} characters long",
+     *      maxMessage = "libelle cannot be longer than {{ limit }} characters",
+     *      allowEmptyString = false
+     * )
      */
     private $libelle;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @Assert\Length(
-     *      min = 10,
-     *      max = 150,
-     *      minMessage = "déscription doit avoir ou minimun 20 caractérs ",
-     *      maxMessage = "déscription doit comporte 100 caractéres"
+     *      min = 20,
+     *      max = 100,
+     *      minMessage = "the description must be at least {{ limit }} characters long",
+     *      maxMessage = "the description cannot be longer than {{ limit }} characters",
+     *      allowEmptyString = false
      * )
      */
     private $description;

@@ -4,8 +4,21 @@
     <list default="true" id="56628ce6-147a-473e-8c8a-539f7e25ec6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CategorieServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategorieServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FourniseurServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FourniseurServiceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ServiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/CategorieService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/CategorieService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/FourniseurService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/FourniseurService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CategorieServiceType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CategorieServiceType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/FournisseurType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/FournisseurType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/baseBack.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/baseBack.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie_service/ajout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categorie_service/ajout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie_service/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categorie_service/details.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categorie_service/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categorie_service/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourniseur_service/affiche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourniseur_service/affiche.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourniseur_service/ajout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourniseur_service/ajout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourniseur_service/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourniseur_service/details.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/fourniseur_service/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fourniseur_service/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/service/affiche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/service/affiche.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +176,11 @@
       <workItem from="1614552020012" duration="1087000" />
       <workItem from="1614766967074" duration="639000" />
       <workItem from="1614866013062" duration="46833000" />
-      <workItem from="1615115312034" duration="5207000" />
+      <workItem from="1615115312034" duration="5278000" />
+      <workItem from="1615130699842" duration="1114000" />
+      <workItem from="1615135001680" duration="3282000" />
+      <workItem from="1615212037560" duration="2302000" />
+      <workItem from="1615381590994" duration="21520000" />
     </task>
     <servers />
   </component>
@@ -186,5 +203,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1615120231636" />
+    <state x="804" y="150" key="FileChooserDialogImpl" timestamp="1615467925678">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="804" y="150" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1615467925678" />
   </component>
 </project>

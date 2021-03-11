@@ -6,6 +6,7 @@ use App\Entity\FourniseurService;
 use App\Form\FournisseurType;
 use App\Repository\FourniseurServiceRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -22,21 +23,21 @@ class FourniseurServiceController extends AbstractController
         ]);
     }
     /**
-     * @Route("/service/fourniseur/affiche",name="afficherfourniseur")
+     * @Route("/fourniseur/service/affiche",name="afficherfourniseur")
      */
     public function affiche(){
         $repo=$this->getDoctrine()->getRepository(FourniseurService::class)->findAll();
-        return $this->render('fourniseur_service/affiche.html.twig',['categories'=>$repo]);
+        return $this->render('fourniseur_service/affiche.html.twig',['fourniseur'=>$repo]);
     }
     /**
-     * @Route("/service/categorie/details/{id}",name="detailsfourniseur")
+     * @Route("/fourniseur/service/details/{id}",name="detailsfourniseur")
      */
     public function affichedetails($id){
         $repo=$this->getDoctrine()->getRepository(FourniseurServiceRepository::class)->find($id);
         return $this->render('fourniseur_service//details.html.twig',['fourniseur'=>$repo]);
     }
     /**
-     * @Route("/service/fourniseur/delete/{id}",name="deletecatservice")
+     * @Route("/fourniseur/service/delete/{id}",name="deletefourniseur")
      */
     public function delete($id,FourniseurServiceRepository $repo){
         $em=$this->getDoctrine()->getManager();
@@ -46,14 +47,12 @@ class FourniseurServiceController extends AbstractController
         return $this->redirectToRoute('afficherfourniseur');
     }
     /**
-     * @Route("/service/fourniseur/ajouter",name="Ajouterfourniseur")
+     * @Route("/fourniseur/service/ajouter",name="Ajouterfourniseur")
      */
     function Ajout(Request $request){
         $fourniseur=new FourniseurService();
         $form=$this->createForm(FournisseurType::class,$fourniseur);
-
         $form->handleRequest($request);
-
         if($form->isSubmitted()&&$form->isValid()){
             $em=$this->getDoctrine()->getManager();
             $em->persist($fourniseur);//insert into
@@ -64,21 +63,20 @@ class FourniseurServiceController extends AbstractController
     }
 
     /**
-     * @Route("/service/fournisseur/update/{id}",name="updatefournisseur")
+     * @Route("/fourniseur/service/update/{id}",name="updatefourniseur")
      */
 
     function update($id,FourniseurServiceRepository $repo,Request $request){
-        $categorie=$repo->find($id) ;
-        $form=$this->createForm(FournisseurType::class,$categorie);
-        $form->add("update",SubmitType::class);
+        $fourniseur=$repo->find($id) ;
+        $form=$this->createForm(FournisseurType::class, $fourniseur);
         $form->handleRequest($request);
         if($form->isSubmitted()&&$form->isValid()){
             $em=$this->getDoctrine()->getManager();
             $em->flush();//maj de la BD
-            return $this->redirectToRoute("affichercatservice");
+            return $this->redirectToRoute("afficherfourniseur");
         }
 
-        return $this->render("categorie_service/update.html.twig",['f'=>$form->createView()]);
+        return $this->render("fourniseur_service/update.html.twig",['f'=>$form->createView()]);
 
     }
 }
