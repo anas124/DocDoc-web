@@ -7,8 +7,6 @@
 /public/bundles/
 /var/
 /vendor/
-/public/distAdmin
-/public/distClient
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
